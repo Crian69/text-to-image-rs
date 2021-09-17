@@ -25,6 +25,6 @@ fn main() {
             imageproc::drawing::draw_text_mut(&mut scramble_image, white, 5, 5, rusttype::Scale::uniform(45.0), &(t), &word);
             scramble_image.save("text.png").unwrap();
         },
-        _ => panic!("Font Not Found")
+        _ => println!("Font go brrr")
     }
 }
